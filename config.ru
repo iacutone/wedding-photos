@@ -1,3 +1,5 @@
+require 'dotenv'
+Dotenv.load
 require 'middleman-core/load_paths'
 ::Middleman.setup_load_paths
 
