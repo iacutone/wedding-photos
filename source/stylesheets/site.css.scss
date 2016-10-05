@@ -69,6 +69,25 @@
   }
 }
 
+.page-link {
+  width: 75%;
+  background: #5F61FF;
+  color: #fff;
+  padding: 10px;
+  margin-left: 10%;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 80px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+.page-link:hover {
+  background: #2F307F;
+}
+
 @media only screen 
   and (max-width: 700px) {
     .gif-container { display: none; }

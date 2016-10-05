@@ -2,18 +2,6 @@
 title: Eric + Viviana  | Wedding
 ---
 
-<div class="banner">
-  <div class="content">
-    Eric + Viviana | Wedding
-  </div>
-</div>
-
-<div class="mobile-banner">
-  <div class="content">
-    Eric + Viviana | Wedding
-  </div>
-</div>
-
 <div class="gif-container">
   <%= image_tag "banner.gif", class: 'gif' %>
 </div>
@@ -22,27 +10,18 @@ title: Eric + Viviana  | Wedding
   <div class="grid-sizer"></div>
   <div class="gutter-sizer"></div>
 
-  <% counter = 0 %>
-  <% (1..70).to_a.each do |num| %>
-    <% counter = counter + num %>
-
-    <div class="grid-item-2">
-      <%= image_tag "wedding-#{counter}.jpg" %>
-    </div>
-    <div class="grid-item-2">
-      <%= image_tag "wedding-#{counter + 1}.jpg" %>
-    </div>
-    <div class="grid-item-2">
-      <%= image_tag "wedding-#{counter + 2}.jpg" %>
-    </div>
-    <div class="grid-item-2">
-      <%= image_tag "wedding-#{counter + 3}.jpg" %>
-    </div>
-
-    <div class="grid-item-full">
-      <%= image_tag "wedding-#{counter + 4}.jpg" %>
-    </div>
+  <% (1..10).to_a.each do |num| %>
+    <% if num % 5 == 0 %>
+      <div class="grid-item-full">
+        <%= image_tag "wedding-#{num}.jpg" %>
+      </div>
+    <% else %>
+      <div class="grid-item-2">
+        <%= image_tag "wedding-#{num}.jpg" %>
+      </div>
+    <% end %>
   <% end %>
 </div>
 
-<%#= link_to 'Page 2', 'page2.html' %>
+<%= link_to 'Page 2', 'page2.html', class: 'page-link' %>
+
