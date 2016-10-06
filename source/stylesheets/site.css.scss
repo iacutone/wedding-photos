@@ -18,7 +18,7 @@
 }
 
 .mobile-banner {
- margin-bottom: 30x;
+ margin-bottom: 30px;
 
   .content {
     color: #FF72F2;
@@ -70,17 +70,16 @@
 }
 
 .page-link {
-  width: 75%;
+  width: 99%;
   background: #5F61FF;
   color: #fff;
-  padding: 10px;
-  margin-left: 10%;
   font-family: 'Quicksand', sans-serif;
   font-size: 80px;
   text-align: center;
   text-decoration: none;
-  border-radius: 15px;
+  border-radius: 50px;
   position: absolute;
+  padding: 10px;
   margin-bottom: 30px;
 }
 
@@ -93,6 +92,7 @@
     .gif-container { display: none; }
     .banner { display: none; }
     .grid-sizer { width: 99%; }
+    .grid-item-full { display: none; }
 }
 
 @media only screen 
